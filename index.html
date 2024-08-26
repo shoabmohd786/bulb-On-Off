@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB ON / OFF</title>
+    <style>
+        .btn1{
+            padding: 10px 20px;
+            color: red;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .btn2{
+            padding: 10px 20px;
+            color: green;
+            cursor: pointer;
+            margin-left: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="bulb" src="bulboff.jpeg" alt="">
+    </div>
+    <button class="btn1">Bulb ON</button>
+    <button class="btn2">Bulb OFF</button>
+    
+</body>
+<script>
+    let bulb=document.querySelector(".bulb")
+    let btn1=document.querySelector(".btn1")
+    let btn2=document.querySelector(".btn2")
+
+    btn1.addEventListener("click",()=> {
+        bulb.src="bulbon.jpeg"
+    })
+    btn2.addEventListener("click",()=> {
+        bulb.src="bulboff.jpeg"
+    })
+
+    
+</script>
+</html>
